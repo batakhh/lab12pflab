@@ -8,12 +8,14 @@ void showBeds(int *p, int size) {
 }
 
 int main() {
+    cout << "Enter beds: ";
     int beds[4];
     for (int i = 0; i < 4; i++)
         cin >> beds[i];
 
     int *currentBed = beds;
 
+    cout << "Beds: ";
     showBeds(currentBed, 4);
 
     currentBed = nullptr;
