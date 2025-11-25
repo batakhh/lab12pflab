@@ -12,10 +12,12 @@ void reserveSeats(int *p, int size, int group) {
 }
 
 int main() {
+    cout << "Enter seats: ";
     int seats[6];
     for (int i = 0; i < 6; i++)
         cin >> seats[i];
 
+    cout << "Enter group: ";
     int group;
     cin >> group;
 
@@ -23,6 +25,7 @@ int main() {
 
     reserveSeats(currentSeat, 6, group);
 
+    cout << "Updated seats: ";
     for (int i = 0; i < 6; i++)
         cout << seats[i] << " ";
     cout << endl;
