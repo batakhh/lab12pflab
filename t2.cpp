@@ -7,6 +7,7 @@ void markAttendance(int *p, int size) {
 }
 
 int main() {
+    cout << "Enter attendance: ";
     int attendance[5];
     for (int i = 0; i < 5; i++)
         cin >> attendance[i];
@@ -17,6 +18,7 @@ int main() {
 
     ptr = nullptr;
 
+    cout << "Updated attendance: ";
     for (int i = 0; i < 5; i++)
         cout << attendance[i] << " ";
 }
