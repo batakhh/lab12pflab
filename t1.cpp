@@ -1,11 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int computeTotal(int **pp, int size) {
+int computeTotal(int *p, int size) {
     int total = 0;
-    int *p = *pp;
     for (int i = 0; i < size; i++)
-        total += *(p + i);
+        total += *(p + i);  // or total += p[i];
     return total;
 }
 
@@ -21,9 +20,6 @@ int main() {
     for (int i = 0; i < n; i++)
         cin >> discount[i];
 
-    int *ptr = prices;
-    cout << computeTotal(&ptr, n) << endl;
-
-    ptr = discount;
-    cout << computeTotal(&ptr, n) << endl;
+    cout << computeTotal(prices, n) << endl;
+    cout << computeTotal(discount, n) << endl;
 }
