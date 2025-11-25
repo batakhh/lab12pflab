@@ -9,17 +9,20 @@ int computeTotal(int *p, int size) {
 }
 
 int main() {
+    cout << "Enter array size: ";
     int n;
     cin >> n;
 
+    cout << "Enter prices: ";
     int *prices = new int[n];
     for (int i = 0; i < n; i++)
         cin >> prices[i];
 
+    cout << "Enter discounts: ";
     int *discount = new int[n];
     for (int i = 0; i < n; i++)
         cin >> discount[i];
 
-    cout << computeTotal(prices, n) << endl;
-    cout << computeTotal(discount, n) << endl;
+    cout << "Total prices: " << computeTotal(prices, n) << endl;
+    cout << "Total discounts: " << computeTotal(discount, n) << endl;
 }
