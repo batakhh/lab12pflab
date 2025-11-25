@@ -4,7 +4,7 @@ using namespace std;
 int computeTotal(int *p, int size) {
     int total = 0;
     for (int i = 0; i < size; i++)
-        total += *(p + i);  // or total += p[i];
+        total += p[i];
     return total;
 }
 
