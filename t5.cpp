@@ -6,9 +6,11 @@ void update(int *p, int add) {
 }
 
 int main() {
+    cout << "Enter a, b, c: ";
     int a, b, c;
     cin >> a >> b >> c;
 
+    cout << "Enter add value: ";
     int add;
     cin >> add;
 
@@ -23,5 +25,6 @@ int main() {
     ptr = &c;
     update(ptr, add);
 
+    cout << "Updated values:" << endl;
     cout << a << endl << b << endl << c;
-}
+} 
